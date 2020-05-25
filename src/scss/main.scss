@@ -5,14 +5,176 @@
 
 html, body {
   height: 100%;
-  min-width: 320px;
 }
 body {
-  font-family: $mainFont;
+  font-family: $dosisBold;
   box-sizing: border-box;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1270px;
+  margin: 0 auto;
+  overflow: hidden;
+  @media (max-width: 575.98px) {max-width: 450px; padding: 0 15px;}
+  @media (max-width: 767.98px) {max-width: 600px; padding: 0 15px;}
+  @media (max-width: 991.98px) {max-width: 800px; padding: 0 15px;}
+  @media (max-width: 1199.98px) {max-width: 1000px; padding: 0 15px;}
+}
 
+.main-screen {
+  background: url("/assets/img/smiling-people.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .container {
+    height: 100vh;
+  }
+  &__logo {
+    margin-top: -137px;
+    display: flex;
+    justify-content: center;
+  }
+  &__title {
+    margin-top: 65px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    color: #2f1946;
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  &__button {
+    margin-top: 54px;
+    padding: 10px 12px 10px 13px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    border-radius: 36px;
+    border: 1px solid #81398b;
+    a {
+      display: flex;
+      align-items: center;
+      padding: 13px 21px 15px 19px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+      border-radius: 25px;
+      background-color: #81398b;
+      span {
+        padding: 0px 6px;
+        color: #ffffff;
+        font-size: 18px;
+      }
+      img {padding: 0px 6px;}
+    }
+  }
+  @media (max-height: 899.98px) {
+    &__logo {
+      margin-top: 60px;
+      img {width: 75%;}
+    }
+    &__title {
+      margin-top: 30px;  
+      font-size: 50px;
+    }
+    &__button {
+      margin-top: 40px;
+      padding: 6px 8px;
+      a {
+        padding: 10px 14px;
+      }
+    }
+    &__table {
+      margin-top: 78px;
+      width: 61.81%;
+      &-col {
+        height: 330px;
+        flex: 0 0 29.94%;
+        margin-bottom: -110px;
+        &-top {
+          height: 220px;
+          img {
+            
+          }
+        }
+        &-bottom {
+          font-size: 32px;
+          height: 110px;
+        }
+      }
+    }
+  }
+}
+
+.welcome {
+  .container {
+    background: none;
+    margin-top: -220px;
+  }
+  .wrapper {
+    padding: 0 243px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__table {
+    width: 61.81%;
+    display: flex;
+    justify-content: space-between;
+    &-col {
+      height: 330px;
+      flex: 0 0 29.94%;
+      &_pink {background-color: #fe4a5d;}
+      &_red {background-color: #e22028;}
+      &_orange {background-color: #ff6c00;}
+      &-top {
+        height: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          
+        }
+      }
+      &-bottom {
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-size: 32px;
+        height: 110px;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  &__title-msg {
+    margin-top: 129px;
+    display: flex;
+    align-items: center;
+    img {}
+    span {
+      margin-left: 12px;
+      color: #2f1946;
+      font-size: 52px;
+      text-transform: uppercase;
+    }
+  }
+  &__quote {
+    margin-top: 34px;
+    color: #2f1946;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+  }
+  &__quote-author {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color: #fe4a5d;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
 
 .ibg {
   background-position: left;
