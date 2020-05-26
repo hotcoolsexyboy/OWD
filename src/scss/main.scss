@@ -109,6 +109,7 @@ body {
   .container {
     background: none;
     margin-top: -220px;
+    margin-bottom: 16px;
   }
   .wrapper {
     padding: 0 243px;
@@ -173,6 +174,124 @@ body {
     color: #fe4a5d;
     font-size: 30px;
     line-height: 36px;
+  }
+}
+
+.join-us {
+    background: url("/assets/img/centre.png");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  .container {
+    justify-content: flex-end;
+    padding-top: 36px;
+  }
+  &__center {
+    margin-top: 0px;
+    background: linear-gradient(to right, #e22028 0%, #f9b416 100%);
+    padding: 9px 8px;
+    &-content {
+      background: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 59px 75px;
+      &-title {
+        margin-top: -9px;
+        color: #2f1946;
+        font-size: 38px;
+        letter-spacing: 0.1px;
+        text-transform: uppercase;
+      }
+      &-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 35px;
+        padding: 10px 48px 11px 57px;
+        border-radius: 4px;
+        background-color: #2f53a3;
+        img {margin-right: 3px;}
+        span {
+          margin-left: 5px;
+          color: #ffffff;
+          font-size: 16px;
+          text-transform: uppercase;
+          letter-spacing: 0.8px;
+        }
+      }
+      &-split {
+        margin-top: 11px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        span {
+          position: relative;
+          color: #9b9b9b;
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 0.7px;
+          &::before {
+            content:"";
+            display: block;
+            width: 132px;
+            height: 2px;
+            background-color: #dcdcdc;
+            border-radius: 1px;
+            position: absolute;
+            top: 50%;
+            margin-top: -2px;
+            left: 28px;
+          }
+          &::after {
+            content:"";
+            display: block;
+            width: 132px;
+            height: 2px;
+            background-color: #dcdcdc;
+            border-radius: 1px;
+            position: absolute;
+            top: 50%;
+            margin-top: -2px;
+            right: 28px;
+          }
+        }
+      }
+      &-form {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input {
+          margin-bottom: 12px;
+          width: 300px;
+          height: 41px;
+          border-radius: 4px;
+          border: 2px solid #dcdcdc;
+          background-color: #ffffff;
+          padding-left: 10px;
+          color: #642f6b;
+          &::placeholder {
+            color: #642f6b;
+            font-family: $dosisBold;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.69px;
+          }
+        }
+        button { 
+          padding: 11px 117px;
+          border-radius: 4px;
+          background-color: #81398b;
+          font-family: $dosisBold;
+          color: #ffffff;
+          font-size: 16px;
+          text-transform: uppercase;
+          letter-spacing: 0.69px;
+        }
+      }
+    }
   }
 }
 
