@@ -1,0 +1,23 @@
+.footer {
+  .container {}
+  &__sign-up {
+    &-text {}
+    &-form {
+      input {}
+      button {}
+    }
+  }
+  &__menu {
+    &-list {
+      &-item {
+        a {}
+      }
+    }
+  }
+  &__flags {
+    img {}
+  }
+  &__copyright {
+    
+  }
+}
