@@ -25,6 +25,8 @@ body {
   @media (max-width: 1199.98px) {max-width: 1000px; padding: 0 15px;}
 }
 
+@import "modules/header.scss";
+
 .main-screen {
   background: url("/assets/img/smiling-people.png");
   background-size: cover;
