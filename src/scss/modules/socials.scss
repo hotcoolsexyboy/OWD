@@ -1,7 +1,7 @@
 .socials {
   position: fixed;
   z-index: 9999;
-  top: 33.3%;
+  top: 40vh;
   width: 50px;
   height: 192px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
@@ -12,4 +12,5 @@
   justify-content: space-around;
   align-items: center;
   img {}
+  display: none;
 }
